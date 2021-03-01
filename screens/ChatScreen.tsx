@@ -5,6 +5,7 @@ import EditScreenInfo from "../components/EditScreenInfo";
 import { View } from "../components/Themed";
 import ChatListItem from "../components/ChatListItem";
 import ChatRooms from "../data/ChatRooms";
+import NewMessageButton from "../components/NewMessageButton";
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
@@ -14,6 +15,7 @@ export default function TabOneScreen() {
         renderItem={({ item }) => <ChatListItem chatRoom={item} />}
         keyExtractor={(item) => item.id}
       />
+      <NewMessageButton />
     </View>
   );
 }

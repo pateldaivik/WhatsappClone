@@ -4,6 +4,7 @@ import { FlatList, Text, ImageBackground } from "react-native";
 import ChatMessage from "../components/ChatMessage";
 import BG from "../assets/images/BG.png";
 import chatRoomData from "../data/Chats";
+import InputBox from "../components/InputBox";
 
 const ChatRoomScreen = () => {
   const route = useRoute();
@@ -13,6 +14,7 @@ const ChatRoomScreen = () => {
         data={chatRoomData.messages}
         renderItem={({ item }) => <ChatMessage message={item} inverted />}
       />
+      <InputBox></InputBox>
     </ImageBackground>
   );
 };
