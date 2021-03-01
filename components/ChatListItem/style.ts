@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
   lastMessage: {
     fontSize: 16,
     color: "grey",
+    // flexWrap: "wrap",
   },
   time: {
     fontSize: 14,
