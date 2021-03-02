@@ -24,6 +24,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 16,
   },
+  status: {
+    fontSize: 14,
+    color: "grey",
+  },
 });
 
 export default styles;

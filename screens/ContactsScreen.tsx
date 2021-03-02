@@ -1,12 +1,11 @@
 import * as React from "react";
 import { FlatList, StyleSheet } from "react-native";
-import { API, graphqlOperation } from "aws-amplify";
 import { View } from "../components/Themed";
 import ContactListItem from "../components/ContactListItem";
 import { useEffect, useState } from "react";
 import Users from "../data/Users";
 
-export default function ContactsScreen() {
+const ContactsScreen = () => {
   //   const [users, setUsers] = useState([]);
 
   //   useEffect(() => {
@@ -31,7 +30,7 @@ export default function ContactsScreen() {
       />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -40,3 +39,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
+export default ContactsScreen;
